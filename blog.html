@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>GofindUniversity - Blog</title>
+	<link rel="stylesheet" href="style.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+<style>
+  .material-symbols-outlined {
+   font-variation-settings:
+   'FILL' 0,
+   'wght' 400,
+   'GRAD' 0,
+   'opsz' 48
+  }
+</style>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+
+<!--- Header --->
+	<section class="sub-header">
+		<nav>
+			<a href="index.html"><img src="logo.png" class="logo" ></a>
+			<span class="material-symbols-outlined" onclick="showMenu()">menu</span>
+			<div class="nav-links" id="navLinks">
+				<span class="material-symbols-outlined" onclick="hideMenu()">close</span>
+				<ul>
+					<li><a href="index.html">HOME</a></li>
+					<li><a href="about.html">ABOUT</a></li>
+					<li><a href="program.html">PROGRAMS</a></li>
+					<li><a href="blog.html">BLOG</a></li>
+					<li><a href="contact.html">CONTACT</a></li>
+				</ul>
+			</div>
+		</nav>
+		<h1>Universities and their faculties</h1>
+	</section>	
+<!--- blog page content ---->	
+<section class="blog-content">
+	<div class="row">
+		<div class="blog-left">
+			<img src="certificate.jpg">
+			<h2>Certificate from Burundi</h2>
+			<p>The burundian universities provide certificates which can be used to apply for master's degree abroad(U.K, U.S., France...). They also grant access to the Burundian Job market with a proof of knowledge acquired during classes and Internships.</p>
+			<br>
+			<p>Students who graduate from those universities can in their future pursue a master degree in Burundi. Qualified teachers are ensuring that students are equipped with the skills they will be using at their Job. Lecturers are either holders of a doctorate or a master degree.</p>
+			<br>
+		    <div class="comment-box">
+				<h3>Leave a comment</h3>
+				<form class="comment-form" 	action="">
+					<input type="text" placeholder="Enter Name">
+					<input type="email" placeholder="Enter Email">
+					<textarea rows="5" placeholder="Your comment"></textarea>
+					<button type="submit" class="hero-btn red-btn">POST COMMENT</button>
+				</form>
+			</div>
+		</div>
+		<div class="blog-right">
+			<h3>Post Categories</h3>
+			<div>
+				<span>Business Administration</span>
+				<span>21</span>
+			</div>
+			<div>
+				<span>Computer Science</span>
+				<span>28</span>
+			</div>
+			<div>
+				<span>Civil Engineering</span>
+				<span>15</span>
+			</div>
+			<div>
+				<span>Medical Science</span>
+				<span>30</span>
+			</div>
+			<div>
+				<span>Hospitality and Tourism</span>
+				<span>42</span>
+			</div>
+		</div>
+	</div>
+</section>
+
+
+<!-- --- Footer --- -->
+<section class="footer">
+	<h4>About Us</h4>
+	<p>GofindUniversity is an initiative of students from Burundian Universities. There are many colleges in Burundi, and this website is providing the necessary information to assist in deciding in which one to apply to. It is possible to get help from GofindUniversity in your registration procedures.</p>	
+	<div class="icons">
+		<i class="fa fa-facebook"></i>
+		<i class="fa fa-twitter"></i>
+		<i class="fa fa-instagram"></i>
+		<i class="fa fa-linkedin"></i>
+	</div>
+	<p>Made with <i class="fa fa-heart-o"></i> by Derrick Irakiza</p>
+</section>
+
+<!------------JavaScript for Toggle Menu------>
+	<script>
+		var navLinks = document.getElementById("navLinks");
+		
+		function showMenu(){
+			navLinks.style.right = "0";
+		}
+		function hideMenu(){
+			navLinks.style.right = "-200px";
+		}
+	</script>	
+</body>
+</html>
