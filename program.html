@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>GofindUniversity - Programs</title>
+	<link rel="stylesheet" href="style.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+<style>
+  .material-symbols-outlined {
+   font-variation-settings:
+   'FILL' 0,
+   'wght' 400,
+   'GRAD' 0,
+   'opsz' 48
+  }
+</style>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+
+<!--- Header --->
+	<section class="sub-header">
+		<nav>
+			<a href="index.html"><img src="logo.png" class="logo" ></a>
+			<span class="material-symbols-outlined" onclick="showMenu()">menu</span>
+			<div class="nav-links" id="navLinks">
+				<span class="material-symbols-outlined" onclick="hideMenu()">close</span>
+				<ul>
+					<li><a href="index.html">HOME</a></li>
+					<li><a href="about.html">ABOUT</a></li>
+					<li><a href="program.html">PROGRAMS</a></li>
+					<li><a href="blog.html">BLOG</a></li>
+					<li><a href="contact.html">CONTACT</a></li>
+				</ul>
+			</div>
+		</nav>
+		<h1>Programs</h1>
+	</section>	
+	
+<!-- --- Programs content --- -->
+
+	<section class="course">
+	<h1>Programs Offered</h1>
+	<p>A wide range of faculties are available in Burundi. </p>
+	
+	<div class="row">
+		<div class="course-col">
+			<h3>Business Administration</h3>
+			<p>Students learn management and administration skills that will be useful to them to solve issues in their business-related careers.</p>
+		</div>
+		<div class="course-col">
+			<h3>Medical Studies</h3>
+			<p>Students learn about the body and the various diseases in order to provide the best health services in hospitals in their future health-related careers.</p>
+		</div>
+		<div class="course-col">
+			<h3>Civil Engineering</h3>
+			<p>Students learn how to build beautiful and strong piece of architecture. Their studies are focused on design and construction skills.</p>
+		</div>
+	</div>
+</section>
+<!------------Facilities------>
+<section class="facilities">
+	<h1>Facilities</h1>
+	<p>Here are some of the facilities</p>
+	
+	<div class="row">
+		<div class="facilities-col">
+			<img src="library.jpg">
+			<h3>Library</h3>
+			<p>This is a place where students can find course literature and work on their assignment.</p>
+		</div>
+		<div class="facilities-col">
+			<img src="computer_lab.jpg">
+			<h3>Computer Lab</h3>
+			<p>This is a place where students learn with adequate technological resources.</p>
+		</div>
+		<div class="facilities-col">
+			<img src="radio.jpg">
+			<h3>Radio FM</h3>
+			<p>Hope University provide interesting programs for the youth including: entepreneurship, health and agriculture.</p>
+		</div>
+	</div>
+</section>
+
+<!-- --- Footer --- -->
+<section class="footer">
+	<h4>About Us</h4>
+	<p>GofindUniversity is an initiative of students from Burundian Universities. There are many colleges in Burundi, and this website is providing the necessary information to assist in deciding in which one to apply to. It is possible to get help from GofindUniversity in your registration procedures.</p>	
+	<div class="icons">
+		<i class="fa fa-facebook"></i>
+		<i class="fa fa-twitter"></i>
+		<i class="fa fa-instagram"></i>
+		<i class="fa fa-linkedin"></i>
+	</div>
+	<p>Made with <i class="fa fa-heart-o"></i> by Derrick Irakiza</p>
+</section>
+
+<!------------JavaScript for Toggle Menu------>
+	<script>
+		var navLinks = document.getElementById("navLinks");
+		
+		function showMenu(){
+			navLinks.style.right = "0";
+		}
+		function hideMenu(){
+			navLinks.style.right = "-200px";
+		}
+	</script>	
+</body>
+</html>
